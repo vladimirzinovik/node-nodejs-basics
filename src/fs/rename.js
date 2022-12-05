@@ -13,7 +13,6 @@ const rename = async () => {
       fs.stat(path, function (err, stats) {
         if (err) {
           fs.rename(dist, path, err => {
-            if (err) throw err;
           });
         } else {
           console.log(cause);
